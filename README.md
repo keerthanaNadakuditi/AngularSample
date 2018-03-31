@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+mongodb install
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/ 
+
+create new folder(with name data) in c drive and create db folder in data folder
+
+open C:\Program Files\MongoDB\Server\3.6\bin and run mongod file--waiting for connections on port 27017
+
+click on mongo
+
+https://www.tutorialsjar.com/mongodb-create-database-drop-command/  for create and insert db, records

@@ -1,11 +1,8 @@
-  <h1>
+<h1>
     Welcome to {{ title }}!
-  </h1>
+</h1>
 
-<input type="number" #el1 [(ngModel)]="inputNumber1"  (input)="checkInput1()" /><br><br>
-<input type="number" #el2 [(ngModel)]="inputNumber2"  (input)="checkInput2()" /><br><br>
-<button type="button" (click)="submit()" [disabled]="disable()" >Calculate
+<input type="number" #el1 [(ngModel)]="inputNumber1" (input)="checkInput1()" /><br><br>
+<input type="number" #el2 [(ngModel)]="inputNumber2" (input)="checkInput2()" /><br><br>
+<button type="button" (click)="calculate()" [disabled]="disable()">Calculate
 </button>
-  
-
-
