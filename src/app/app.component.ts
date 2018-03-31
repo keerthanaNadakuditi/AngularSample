@@ -10,7 +10,6 @@ export class AppComponent {
   inputNumber1: number;
   inputNumber2: number;
 
-
   @ViewChild('el1') el1: ElementRef;
   @ViewChild('el2') el2: ElementRef;
 
