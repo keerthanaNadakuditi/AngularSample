@@ -1,12 +1,14 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'helloooo ';
+  title = 'app';
   inputNumber1: number;
   inputNumber2: number;
 
@@ -17,8 +19,6 @@ export class AppComponent {
   constructor(private http: HttpClient) { 
 
   }
-
-
 
   ngOnInit() { 
     this.http.get('http://localhost:3000/getData')
@@ -36,8 +36,6 @@ export class AppComponent {
       .subscribe(data => { 
         console.log(data);
       });
-
-
   }
 
   checkInput1() {
