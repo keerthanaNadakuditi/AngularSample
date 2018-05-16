@@ -3,8 +3,13 @@ import { DebugElement } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
+<<<<<<< HEAD
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+=======
 import { isNumber } from 'util';
 import { By } from '@angular/platform-browser';
+>>>>>>> d126e5d7e6490af0193f30d32789d57148f103b5
 
 describe('AppComponent', () => {
   let fixture: ComponentFixture<AppComponent>;
@@ -63,9 +68,18 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     //expect(app.checkInput1()).toEqual(Number);
   }));
+<<<<<<< HEAD
+  // it('should render title in a h1 tag', async(() => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   fixture.detectChanges();
+  //   const compiled = fixture.debugElement.nativeElement;
+  //   expect(compiled.querySelector('h1').textContent).toContain('Welcome to app!');
+  // }));
+=======
   it('Any text values should cause the field to be disabled', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     //expect(app.checkInput1()).toEqual(false);
   }));
+>>>>>>> d126e5d7e6490af0193f30d32789d57148f103b5
 });

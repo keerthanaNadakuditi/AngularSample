@@ -1,12 +1,18 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+<<<<<<< HEAD
+  title = 'app';
+=======
   title;
+>>>>>>> d126e5d7e6490af0193f30d32789d57148f103b5
   inputNumber1: number;
   inputNumber2: number;
   result: number;
@@ -21,7 +27,11 @@ export class AppComponent {
     this.getInputdata();
   }
 
+<<<<<<< HEAD
+  ngOnInit() { 
+=======
   getInputdata = function getInput() {
+>>>>>>> d126e5d7e6490af0193f30d32789d57148f103b5
     this.http.get('http://localhost:3000/getData')
       .subscribe(data => {
         let result: any = data;
